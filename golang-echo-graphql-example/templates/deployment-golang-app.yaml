@@ -20,7 +20,7 @@ spec:
   template:
     metadata:
       annotations:
-        checksum/config: {{ include (print $.Template.BasePath "/config-golangapp.yaml") . | sha256sum }}
+        checksum/config: {{ include (print $.Template.BasePath "/config-golan-gapp.yaml") . | sha256sum }}
       labels:
     {{- include "golangapp.selectorLabels" . | nindent 8 }}
         version: v1
